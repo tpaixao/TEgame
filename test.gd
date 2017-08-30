@@ -1,5 +1,6 @@
 extends Node2D
 var pointer;
+var timer;
 var pointer_scn;
 # class member variables go here, for example:
 # var a = 2
@@ -17,4 +18,10 @@ func _unhandled_input(event):
 func _ready():
 	set_process_unhandled_input(true);
 	pointer_scn = preload("res://MouseControl.tscn");
+	timer = get_node("Timer")
+	timer.connect("out_of_time",self,"_on_out_of_time");
+	pass
+	
+func _on_out_of_time():
+	# here we get a new generation (mutation, selection, etc...)
 	pass

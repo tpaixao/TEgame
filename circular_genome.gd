@@ -69,7 +69,7 @@ func _ready():
 		segments[rnd_pos].change_state(segments[rnd_pos].SEG_STATE.CDS)
 		
 	max_fitness = count_segments(seg_states.CDS);
-	fitness= max_fitness;# need to reset it...
+	fitness= max_fitness;# need to reset it: signals update it...
 	score=count_segments(seg_states.TE);
 	fitness_bar.set_val(float(fitness)/float(max_fitness));
 	pass
