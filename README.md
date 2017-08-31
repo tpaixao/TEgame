@@ -1,5 +1,5 @@
-TODO LIST
----------
+# TODO LIST
+
 [?] Add different sprites for the different states of the segments
 [X] add references to circular_genome and an ID to every segment
 [X] make proteins insert into the genome
@@ -10,5 +10,5 @@ TODO LIST
 [ ] make new graphics for the genome (circle-line for the empty stuff)
 [ ] Implement new generation
 	[ ] copying the genome
-	[ ] mutations
+	[ ] mutations (can eliminate TEs;)
 	[ ] selection (replication dependent on fitness)
